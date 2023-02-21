@@ -1,0 +1,627 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none ;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+
+
+.big-container{
+    max-width: 1200px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+
+.container{
+    max-width: 1200px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+
+
+
+.header{
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #d8d4ca 0%,
+    rgba(217,217,217,0) 100%);
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu-list{
+    display: flex;
+    gap: 40px;
+    padding-top: 25px;
+}
+
+
+.menu-link:hover{
+    text-decoration: overline;
+}
+
+
+
+.menu-left{
+    padding-left: 25px;
+}
+
+
+.menu-right{
+    padding-right: 25px;
+}
+
+
+
+
+.menu-link{
+    color: #363636;
+    font-size: 16px;
+}
+/* main */
+.promo-inner{
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+
+
+.promo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/sections/car/Rectangle\ 14.png);
+    display: flex;
+}
+
+
+
+.title{
+    font-weight: 900;
+    font-family: serif;
+    font-size: 50px;
+    letter-spacing: 0.02em;
+}
+
+
+
+.subtitle{
+    font-weight: 400;
+    font-family: serif;
+    font-size: 48px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+
+
+.subtitle span{
+    color: goldenrod;
+    font-size: 34px;
+    display: block;
+     /* db для переноса на след строку  */
+     padding: 10px 0;
+}
+
+
+
+.promo-text{
+    font-size: 20px;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+
+.bottom-arrow{
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+/* main */
+
+
+
+/* info */
+.info{
+    margin-bottom: 100px;
+}
+
+
+
+.info-part{
+    padding-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+
+
+.info-part-third{
+    padding-top: 66px;
+}
+
+
+
+.info-part-first{
+    display: block;
+}
+
+
+.info-title{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+
+
+.info-part-textbox{
+    display: flex;
+    gap: 100px;
+    padding-top: 30px;
+}
+
+
+
+.info-text{
+    flex-basis: 440px;
+    margin-bottom: 30px;
+}
+
+
+
+.info-part-img{
+    object-fit: cover;
+}
+
+
+
+.info-content{
+    flex-basis: 415px;
+}
+
+
+
+
+.info-part-first .info-text{
+    max-width: 377px;
+}
+
+
+
+
+.info-part-second .info-text{
+    max-width: 377px;
+}
+
+
+
+.info-part-third .info-text{
+    max-width: 377px;
+}
+
+
+
+.info-table{
+    flex-basis: 450px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+
+
+.info-table-td{
+    padding-bottom: 20px;
+}
+
+
+
+.track{
+    padding-top: 90px;
+    background-image: url(../images/sections/car/bgtrack.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+
+
+.track-title{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+
+
+.track-text{
+    max-width:435px;
+}
+
+
+
+.track-img{
+    margin: 0 auto;
+    display: block;
+    margin-top: 400px;
+}
+/* info */
+
+
+
+/* track */
+.evo-black{
+    background-color: #363636;
+    padding: 100px 0 50px;
+    color: aliceblue;
+}
+
+
+
+.evo-black-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.evo-black-title{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 32px;
+    padding-right: 50px;
+}
+
+
+
+.evo-black-text{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.evo-black-infobox{
+    flex-basis: 437px;
+}
+
+
+
+.evo-black-img{
+    display: block;
+    margin: 300px auto 60px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.evo-descr-list{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+
+
+
+.evo-black-inner{
+    position: relative;
+}
+
+
+
+.evo-black-inner::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/sections/decor/dec3.png);
+    width: 185px;
+    height: 213px;
+    top: 210px;
+    left: -180px;
+}
+
+
+
+.evo-black-inner::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/sections/decor/Polygon\ 2.png);
+    width: 492px;
+    height: 213px;
+    top: 290px;
+    left: -40;
+}
+/* evo white */
+.evo-white-inner{
+    padding-top: 125px;
+}
+
+
+
+.evo-white-text{
+    margin-bottom: 30px;
+}
+
+
+
+
+.evo-white-text:first-child{
+    max-width: 285px;
+}
+
+
+
+.evo-white-text:nth-child(2){
+    max-width: 437px;
+}
+
+
+
+.evo-white-text:nth-child(3){
+    max-width: 590px;
+}
+
+
+
+.evo-white-video{
+    margin-top: 100px;
+    background-image: url(../images/sections/car/Polygon\ 6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.evo-white-video-link span{
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.blog{
+    margin-bottom: 100px;
+}
+
+
+.blog-title{
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+
+
+.blog-item-img{
+    margin-bottom: 50px;
+}
+
+
+
+.blog-item-title{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    min-height: 50px;
+}
+
+
+
+.blog-item-text{
+    margin-bottom: 10px;
+}
+
+
+
+
+.blog-item-link{
+    color: #363636;
+    font-size: 12px;
+}
+
+
+
+.blog-item-link:hover{
+    text-decoration: overline;
+}
+
+
+/* posa отсносительно posr block */
+/* .blog-slider{
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 100px;
+} */
+/* track */
+
+.blog-quote{
+    display: flex;
+    justify-content: space-between;
+    grid-template: 0 20px;
+}
+
+
+
+.blog-quote-box{
+    flex-basis: 434px;
+}
+
+
+
+.blockquote{
+    margin-top: 100px;
+}
+
+
+
+.blockquote-name{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+
+
+.blockquote-name span{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #9f6b08;
+}
+
+
+
+
+.blockquote-text{
+    font-size: italic;
+}
+
+
+
+.blog-quote-img{
+    margin-top: 100px;
+}
+
+
+/* footer */
+.footer{
+    padding: 100px 0 80px;
+    background-color: #363636;
+    color: aliceblue;
+}
+
+
+
+.footer-title{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: aliceblue;
+}
+
+
+
+.footer-item{
+    margin-bottom: 40px;
+}
+
+
+
+.footer-item dt{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+.footer-item dd{
+    margin-bottom: 10px;
+}
+
+
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+}
+
+
+
+.footer-adress{
+    flex-basis: 432px;
+}
+
+
+
+.social-list{
+    display: flex;
+    gap: 0 30px;
+    align-items: center;
+}
+
+
+
+.footer-adress-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px; 
+}
+
+
+
+.footer-adress-text{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+.footer-bottom {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+
+.footer-bottom a{
+    color: #fff;
+}
+
+
+/* map */
+#map{
+    height: 250px;
+}
+/* footer */

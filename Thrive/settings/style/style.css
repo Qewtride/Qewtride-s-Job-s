@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+html {
+  position: relative;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1;
+  color: black;
+}
+
+
+header,
+main,
+footer {
+  padding: 20px;
+  background: #f4f9e2;
+}
+
+/*header video*/
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* end video */
+
+/***** templates *****/
+.blue-bg {
+  background: #62d0df;
+}
+/***** End templates *****/
+
+/***** Logo Text *****/
+.logo-text {
+  font-family: "Larsseit";
+  font-size: 24px;
+  line-height: 27px;
+  /* identical to box height */
+
+  letter-spacing: -0.035em;
+
+  color: #62d0df;
+}
+.logo {
+  width: 484px;
+  height: 64px;
+  color: #62d0df;
+  font-family: "Larsseit";
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+}
+/***** End Logo Text *****/
+
+/***** Navigation *****/
+.nav-link {
+  font-family: "Larsseit";
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #22356f;
+}
+
+.nav-link:hover {
+  color: black;
+}
+/***** End Navigation *****/
+
+/***** btn *****/
+.btn-primary:hover {
+  background-color: #f4f9e2;
+}
+.btn-contact {
+  width: 150px;
+  height: 50px;
+
+  background: #62d0df;
+  border-radius: 50px;
+
+  border: none;
+  text-decoration: none;
+}
+
+.btn-larger {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  background: #f9b640;
+  border: none;
+}
+
+.btn-smaller {
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 23px;
+
+  align-items: center;
+  letter-spacing: 0.1em;
+  background: #f4f9e2;
+  color: #fab63e;
+  border: none;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.us-btn-smaller {
+  width: 93px;
+  height: 210px;
+
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  border: none;
+  text-decoration: none;
+  color: #22356f;
+}
+
+.us-btn-smaller:hover {
+  color: black;
+}
+
+.help-btn {
+  left: 620px;
+  top: 1882px;
+
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.help-btn:hover {
+  color: black;
+}
+
+.help-btn-down {
+  right: 50px;
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #22356f;
+  margin-top: 20px;
+}
+
+.hero-description {
+  margin-top: 300px;
+
+  font-family: "Larsseit";
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.01em;
+
+  color: #22356f;
+}
+
+.btn-orange {
+  right: 50px;
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #fab63e;
+  margin-top: 20px;
+
+  font-family: "Larsseit";
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  letter-spacing: 0.1em;
+}
+
+.btn-sup {
+  padding-left: 180px;
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 20px;
+
+  font-family: "Larsseit";
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  letter-spacing: 0.1em;
+}
+/***** End btn*****/
+
+/***** descr-h1 *****/
+.descr-h1 {
+  width: 484px;
+  height: 167px;
+
+  font-family: "Larsseit";
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: -0.035em;
+
+  color: #22356f;
+}
+/***** descr-h1 end *****/
+
+/***** descr(text) *****/
+.descr {
+  width: 469px;
+  height: 161px;
+
+  font-family: "Larsseit";
+  font-size: 24px;
+  line-height: 42px;
+
+  color: #22356f;
+}
+
+.descr-story {
+  padding-top: 150px;
+  padding-left: 150px;
+  color: white;
+}
+
+.descr-story-grl {
+  color: white;
+  padding-left: 150px;
+  padding-top: 50px;
+
+  font-family: "Larsseit";
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.us-descr {
+  width: 592px;
+  height: 210px;
+  left: 424px;
+  top: 1596px;
+
+  font-family: "Larsseit";
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.005em;
+  color: #22356f;
+}
+
+.forwhom-text {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Larsseit";
+  font-size: 64px;
+  line-height: 94px;
+  letter-spacing: -0.01em;
+  margin-right: 220px;
+}
+
+.forwhom-descr {
+  font-family: "Larsseit";
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: -0.005em;
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+
+  width: 579px;
+  height: 253px;
+}
+
+/***** descr end *****/
+
+/***** imges *****/
+.hero-man {
+  
+
+
+}
+/***** End images *****/
+
+/***** Colorful block's *****/
+.pink {
+  background: pink;
+  padding: 125px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.blue {
+  background-color: cyan;
+  padding: 125px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.green {
+  background: #c4e769;
+  padding: 108px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sky {
+  background: #62d0df;
+  padding: 125px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  padding-right: 5px;
+}
+
+.block-text {
+  font-family: "Larsseit";
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: -0.006em;
+
+  color: #ffffff;
+}
+/***** End*****/
+
+/* colorfull-benefits */
+
+.blue-bg-benefit {
+  background: #22356f;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.colorfull {
+  font-family: "Larsseit";
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: -0.03em;
+
+  color: #22356f;
+}
+
+.description {
+  font-family: "Larsseit";
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.benefit-text {
+  padding: 50px;
+}
+
+/* end-benefits */
+
+.forwhom {
+  background: #22356f;
+  width: 1380px;
+  height: 800px;
+}
+
+/* Footer */
+.adress {
+  font-family: "Larsseit";
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.006em;
+
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.time-work {
+  font-family: "Larsseit";
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.info {
+  font-family: "Larsseit";
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+
+  color: rgba(34, 53, 111, 0.5);
+}
+
+.footer-descr {
+  font-family: "Larsseit";
+  font-size: 20px;
+  line-height: 11px;
+  letter-spacing: -0.006em;
+
+  color: #22356f;
+}
+
+.footer-cont {
+  background: #62D0DF;
+
+}
+
+.footer-description {
+  padding-left: 250px;
+}

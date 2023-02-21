@@ -1,0 +1,360 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none ;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+.page::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../images/sections/XMAS/bg.webp")center / cover no-repeat;
+}
+
+
+
+.main-screen {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+
+.main-screen * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+
+
+.moon span{
+    background: url("../images/sections/XMAS/moon.webp");
+    height: auto;
+    transform: translate(-780px,-50%);
+    padding-bottom: 36%;
+}
+
+
+
+.building span{
+    width: 110%;
+    left: -5%;
+}
+
+
+.building__three span{
+    background: url("../images/sections/XMAS/building-03.webp")bottom / auto 100% repeat-x;
+}
+
+
+.building__two span{
+    background: url("../images/sections/XMAS/building-02.webp")bottom / auto 100% repeat-x;
+
+}
+
+
+
+.building__one span{
+    background: url("../images/sections/XMAS/building-01.webp")bottom / auto 100% repeat-x;
+
+}
+
+
+
+.train span{
+    min-width: 62.5rem;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    background: url("../images/sections/XMAS/train.webp")bottom / auto 100% no-repeat;
+}
+
+
+
+.santa {
+}
+
+
+
+.santa__tree span{
+    margin-left: -60vh;
+    transform: rotate(90deg);
+    background: url("../images/sections/XMAS/christmas-tree.webp")center / auto 25% no-repeat;
+}
+
+
+
+.santa__ball_one span{
+    margin-top: -10vh;
+    margin-left: -40vh;
+    background: url("../images/sections/XMAS/ball-01.webp")center / auto 2.5% no-repeat;
+}
+
+
+
+.santa__candy__one span{
+    margin-top: -2vh;
+    margin-left: -35vh;
+    background: url("../images/sections/XMAS/candy-01.webp")center / auto 4.5% no-repeat;
+}
+
+
+
+.santa__ball_two span{
+    margin-top: -5vh;
+    margin-left: -27vh;
+    background: url("../images/sections/XMAS/ball-02.webp")center / auto 1.5% no-repeat;
+}
+
+
+
+.santa__candy__two span{
+    margin-left: -23vh;
+    background: url("../images/sections/XMAS/candy-02.webp")center / auto 3.5% no-repeat;
+}
+
+
+
+.santa__man span{
+    margin-top: -10vh;
+    margin-left: -6vh;
+    background: url("../images/sections/XMAS/santa.webp")center / auto 25% no-repeat;
+}
+
+
+
+.tree span{
+
+}
+
+
+
+.stairs span{
+    width: 110%;
+    left: -5%;
+    background: url("../images/sections/XMAS/stairs.webp")bottom / 100% no-repeat;
+}
+
+
+
+.efx {
+    background: url("../images/sections/XMAS/noise.webp")center repeat;
+}
+
+
+.efx::before,
+.efx::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+.efx::before{
+    background: linear-gradient(180deg, #194153 0%, #16233b 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+
+
+.efx::after{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(4,33,58,0)0% #04213a 100%);
+    opacity: 0.5;
+}
+
+
+
+.content {
+    padding-top: 300vh;
+    padding-bottom: 3.125rem;
+    color: #fff;
+}
+
+
+
+.content__container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 78.75rem;
+    padding: 1.875rem;
+    background-color: rgba(22, 35, 59, 0.8);
+}
+
+
+
+.content__title {
+    font-size: 2.125rem;
+    text-transform: uppercase;
+    margin-bottom: 1.875rem
+}
+
+
+
+.content__body p{
+    line-height: 150%;
+}
+
+
+
+.content__body p:not(:last-child){
+    margin-bottom: 1.875rem;
+}
+
+
+/* load anim */
+
+.stairs span{
+    transform: translate(0px, 100%);
+}
+
+
+
+.loaded .stairs span{
+    transform: translate(0px, 1%);
+    transition: transform 1s ease;
+}
+
+
+
+.tree span{
+    transform: translate(0px, 100%);
+}
+
+
+
+.loaded .tree span{
+    transform: translate(0px, 0%);
+    transition: transform 1s ease 0.1s;
+}
+
+
+
+.moon span{
+    transform: translate(0px, -100%);
+}
+
+
+
+.loaded .moon span{
+    transform: translate(0px, -50%);
+    transition: transform 1s ease 0.5s;
+}
+
+
+
+.building span{
+    transform: translate(0px, 100%);
+}
+
+
+
+.loaded .building span{
+    transform: translate(0px, 0%);
+    transition: transform 1s ease 0.9s;
+}
+
+
+
+.loaded .building__one span{
+    transition-delay: 0.2s;
+}
+
+
+
+.loaded .building__two span{
+    transition-delay: 0.4s;
+}
+
+
+
+.loaded .building__three span{
+    transition-delay: 0.6s;
+}
+
+
+
+.train span{
+    opacity: 0;
+    transform: translate(100%, -100%);
+}
+
+
+
+.loaded .train span{
+    opacity: 1;
+    transform: translate(-50%, 0%);
+    transition: transform 1.5s ease 1.5s, opacity 1.5s ease 1.5s;
+}
+
+
+
+.santa span{
+    transform: translate(-100vw,100%);
+}
+
+
+.loaded .santa span{
+    transform:translate(0vw,0px);
+}
+
+
+
+.loaded .santa__tree span{
+    transition:transform 2.3s ease 1.25s;
+}
+
+
+
+.loaded .santa__ball_one span{
+    transition:transform 2.3s ease 1.2s;
+}
+
+
+
+.loaded .santa__candy__one span{
+    transition:transform 2.4s ease 1.15s;
+}
+
+
+
+.loaded .santa__ball_two span{
+    transition:transform 2.2s ease 1.1s;
+}
+
+
+
+.loaded .santa__candy__two span{
+    transition:transform 2.0s ease 1.05s;
+}
+
+
+
+.loaded .santa__man span{
+    transform:translate(0vw,0%);
+    transition:transform 2s ease 1s;
+}
+

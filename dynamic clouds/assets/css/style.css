@@ -1,0 +1,133 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none ;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+[class*="-container"]{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    position: relative;
+}
+
+
+
+.page {
+}
+
+
+
+.page-clouds {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 10%;
+    justify-content: space-evenly;
+}
+
+
+
+.page-cloud {
+    transform-origin: top;
+}
+
+
+.page-cloud:first-child {
+    animation: clouds 4s infinite ease-in-out alternate;
+}
+
+
+.page-cloud:last-child {
+    animation: clouds 2s infinite ease-in-out alternate-reverse;
+
+}
+
+
+.page-cloud img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
+
+
+.page-moon {
+}
+
+
+
+.moon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.moon-box {
+    width: 90vh;
+    max-width: 80%;
+    transform: translate(-15%, 0px);
+}
+
+
+
+.moon-item {
+    background-color: #000;
+    display: block;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    position: relative;
+    transform-origin: bottom;
+}
+
+
+.moon-item::before{
+    background-color: #fff;
+    content:"";
+    position: absolute;
+    width: 102%;
+    top: -1%;
+    left: -1px;
+    height: 102%;
+    border-radius: 50%;
+}
+
+
+@keyframes clouds {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(3deg);
+    }
+}
